@@ -1,7 +1,7 @@
 import sys
 import os
-# Add the project root to sys.path so we can find the 'ml' folder
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../..")))
+# Add the backend root to sys.path so we can find the 'ml' folder
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../..")))
 
 from app.services.database import execute_query
 from app.services.ui_schema.schema_builder import build_genui_response
