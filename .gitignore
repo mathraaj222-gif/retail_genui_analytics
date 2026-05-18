@@ -27,8 +27,8 @@ data/exports/*
 !data/exports/.gitkeep
 
 # ML
-ml/models/*
-!ml/models/.gitkeep
+backend/ml/models/*
+!backend/ml/models/.gitkeep
 
 # OS
 .DS_Store
