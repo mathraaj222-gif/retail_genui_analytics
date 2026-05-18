@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: 222 47% 4%; /* Deep Navy */
+    --foreground: 213 31% 91%;
+    --card: 222 47% 6%;
+    --card-foreground: 213 31% 91%;
+    --primary: 217 91% 60%; /* Electric Blue */
+    --primary-foreground: 210 40% 98%;
+    --border: 214 32% 91%; /* Slate-200 */
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-white border border-slate-200 shadow-sm transition-all duration-300;
+  }
+  
+  .glass-panel:hover {
+    @apply shadow-md border-slate-300;
+  }
+
+  .chart-container {
+    @apply bg-white border border-slate-200 p-6 rounded-[2rem] shadow-sm;
+  }
+}
+
+/* Custom Scrollbar - Hidden globally */
+::-webkit-scrollbar {
+  display: none;
+  width: 0px;
+  background: transparent;
+}
+
+.custom-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.text-glow {
+  text-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+}
+
+.ai-glow {
+  box-shadow: 0 0 20px rgba(124, 58, 237, 0.2);
+}
+
+.chart-container {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.chart-container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 40px -10px rgba(0,0,0,0.5);
+  border-color: rgba(255,255,255,0.1);
+}

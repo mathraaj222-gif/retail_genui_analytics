@@ -1,0 +1,133 @@
+retail-genui-analytics/
+|-- backend
+|   |-- alembic
+|   |-- app
+|   |   |-- api
+|   |   |   -- v1
+|   |   |       |-- constants
+|   |   |       |   |-- analytics.py
+|   |   |       |   |-- charts.py
+|   |   |       |   -- promotions.py
+|   |   |       -- routes
+|   |   |           |-- analytics.py
+|   |   |           |-- charts.py
+|   |   |           -- promotions.py
+|   |   |-- core
+|   |   |   -- config.py
+|   |   |-- db
+|   |   |   |-- models
+|   |   |   |   |-- campaign.py
+|   |   |   |   |-- event.py
+|   |   |   |   |-- product.py
+|   |   |   |   -- store.py
+|   |   |   |-- schemas
+|   |   |   |   |-- request
+|   |   |   |   -- response
+|   |   |   |-- base_class.py
+|   |   |   -- session.py
+|   |   |-- prompts
+|   |   |   -- templates
+|   |   |-- services
+|   |   |   |-- ai
+|   |   |   |   |-- intent_parser.py
+|   |   |   |   |-- prompt_manager.py
+|   |   |   |   |-- query_builder.py
+|   |   |   |   -- ui_schema_generator.py
+|   |   |   |-- analytics
+|   |   |   |   |-- descriptive_analysis.py
+|   |   |   |   |-- diagnostic_analysis.py
+|   |   |   |   |-- insights.py
+|   |   |   |   |-- predictive_analysis.py
+|   |   |   |   -- prescriptive_analysis.py
+|   |   |   |-- cache
+|   |   |   |   |-- query_cache.py
+|   |   |   |   -- redis_cache.py
+|   |   |   |-- feature_engineering
+|   |   |   |   |-- promo_metrics.py
+|   |   |   |   |-- revenue_features.py
+|   |   |   |   -- uplift_features.py
+|   |   |   |-- forecasting
+|   |   |   |-- insights
+|   |   |   |   |-- anomaly_detector.py
+|   |   |   |   |-- insight_generator.py
+|   |   |   |   -- trend_detector.py
+|   |   |   |-- query_engine
+|   |   |   |   |-- metric_builder.py
+|   |   |   |   |-- query_executor.py
+|   |   |   |   -- sql_generator.py
+|   |   |   |-- recommendation
+|   |   |   |-- ui_schema
+|   |   |   |   |-- component_mapper.py
+|   |   |   |   |-- schema_builder.py
+|   |   |   |   -- visualization_selector.py
+|   |   |   -- database.py
+|   |   -- utils
+|   |       |-- helpers.py
+|   |       |-- logger.py
+|   |       -- validators.py
+|   |-- constants
+|   |   -- promotions.py
+|   |-- tests
+|   |   |-- ai
+|   |   |-- analytics
+|   |   |-- api
+|   |   |-- forecasting
+|   |   -- recommendation
+|   |-- .env
+|   |-- .env.example
+|   |-- create_tables.py
+|   |-- load_data.py
+|   |-- main.py
+|   |-- requirements.txt
+|   -- test_db_connection.py
+|-- data
+|   |-- exports
+|   |   |-- dim_campaigns.csv
+|   |   |-- dim_products.csv
+|   |   |-- dim_stores.csv
+|   |   -- fact_events.csv
+|   |-- processed
+|   -- raw
+|-- frontend
+|   |-- app
+|   |   -- (dashboard)
+|   |       |-- analytics
+|   |       |-- chat
+|   |       -- dashboard
+|   |-- components
+|   |   |-- genui
+|   |   |   |-- chart-factory.tsx
+|   |   |   |-- component-registry.ts
+|   |   |   |-- dynamic-renderer.tsx
+|   |   |   |-- insight-card.tsx
+|   |   |   -- recommendation-card.tsx
+|   |   |-- layout
+|   |   |-- providers
+|   |   -- visualizations
+|   |       |-- cards
+|   |       |-- charts
+|   |       -- kpi
+|   |           |-- growth-indicator.tsx
+|   |           |-- metric-card.tsx
+|   |           -- uplift-card.tsx
+|   |-- lib
+|   |   |-- api
+|   |   |   -- client.ts
+|   |   |-- config
+|   |   -- schema
+|   |       |-- chart-schema.ts
+|   |       -- ui-schema-validator.ts
+|   |-- state
+|   |-- styles
+|   |-- types
+|   |   -- genui.ts
+|   |-- package.json
+|   -- tailwind.config.ts
+|-- ml
+|   |-- inference
+|   |-- models
+|   |-- notebooks
+|   -- training
+|-- .gitignore
+|-- docker-compose.yml
+-- README.md

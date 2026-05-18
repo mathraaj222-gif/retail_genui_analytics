@@ -1,0 +1,29 @@
+version: '3.8'
+
+# Placeholder for Retail Promotion Intelligence Platform Docker Setup
+# Services to be implemented:
+# - backend: FastAPI application
+# - frontend: Next.js application
+# - db: PostgreSQL database
+# - redis: Cache layer for analytics
+
+services:
+  # DB Service placeholder
+  db:
+    image: postgres:15-alpine
+    # environment:
+    #   - POSTGRES_USER=${DB_USER}
+    #   - POSTGRES_PASSWORD=${DB_PASSWORD}
+    #   - POSTGRES_DB=${DB_NAME}
+    ports:
+      - "5432:5432"
+
+  # Backend Service placeholder
+  # backend:
+  #   build: ./backend
+  #   ...
+
+  # Frontend Service placeholder
+  # frontend:
+  #   build: ./frontend
+  #   ...
