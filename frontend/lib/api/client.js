@@ -1,11 +1,14 @@
 // Detect the host dynamically to support network-based development
 const getBaseUrl = () => {
+  if (process.env.NEXT_PUBLIC_API_URL) {
+    return process.env.NEXT_PUBLIC_API_URL;
+  }
   if (typeof window !== "undefined") {
     const host = window.location.hostname;
     // Force 127.0.0.1 for localhost to avoid IPv6 issues on Windows
     return host === "localhost" || host === "127.0.0.1" ? "http://127.0.0.1:8000" : `http://${host}:8000`;
   }
-  return process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000";
+  return "http://127.0.0.1:8000";
 };
 
 
