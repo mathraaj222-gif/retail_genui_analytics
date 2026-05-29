@@ -217,14 +217,14 @@ export default function DynamicView({ schema, data, insights, executive_summary,
                 onClick={() => setSelectedCampaign("All")}
                 className={`flex items-center gap-3 px-4 py-2.5 rounded-xl border text-xs font-bold tracking-wide transition-all duration-300 ${
                   selectedCampaign === "All"
-                    ? "bg-slate-900 border-slate-900 text-white shadow-md shadow-slate-200"
-                    : "bg-slate-50 border-slate-200 text-slate-600 hover:bg-slate-100"
+                    ? "bg-blue-600 border-blue-600 text-white shadow-sm shadow-blue-100"
+                    : "bg-slate-50 border-slate-200 text-slate-600 hover:bg-slate-100 hover:border-blue-400"
                 }`}
               >
                 <div className={`w-3.5 h-3.5 rounded-full border-2 flex items-center justify-center transition-all ${
                   selectedCampaign === "All" ? "border-white bg-white" : "border-slate-300 bg-transparent"
                 }`}>
-                  {selectedCampaign === "All" && <div className="w-1.5 h-1.5 rounded-full bg-slate-900" />}
+                  {selectedCampaign === "All" && <div className="w-1.5 h-1.5 rounded-full bg-blue-600" />}
                 </div>
                 All Campaigns
               </button>
@@ -235,14 +235,14 @@ export default function DynamicView({ schema, data, insights, executive_summary,
                   onClick={() => setSelectedCampaign(name)}
                   className={`flex items-center gap-3 px-4 py-2.5 rounded-xl border text-xs font-bold tracking-wide transition-all duration-300 ${
                     selectedCampaign === name
-                      ? "bg-slate-900 border-slate-900 text-white shadow-md shadow-slate-200"
-                      : "bg-slate-50 border-slate-200 text-slate-600 hover:bg-slate-100"
+                      ? "bg-blue-600 border-blue-600 text-white shadow-sm shadow-blue-100"
+                      : "bg-slate-50 border-slate-200 text-slate-600 hover:bg-slate-100 hover:border-blue-400"
                   }`}
                 >
                   <div className={`w-3.5 h-3.5 rounded-full border-2 flex items-center justify-center transition-all ${
                     selectedCampaign === name ? "border-white bg-white" : "border-slate-300 bg-transparent"
                   }`}>
-                    {selectedCampaign === name && <div className="w-1.5 h-1.5 rounded-full bg-slate-900" />}
+                    {selectedCampaign === name && <div className="w-1.5 h-1.5 rounded-full bg-blue-600" />}
                   </div>
                   {name.toUpperCase()}
                 </button>

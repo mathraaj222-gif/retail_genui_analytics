@@ -1,16 +1,5 @@
-import { Outfit, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import AppLayout from "@/components/AppLayout";
-
-const outfit = Outfit({ 
-  subsets: ["latin"],
-  variable: "--font-outfit",
-});
-
-const mono = JetBrains_Mono({
-  subsets: ["latin"],
-  variable: "--font-mono",
-});
 
 export const metadata = {
   title: "Pulse AI | Retail Intelligence",
@@ -19,8 +8,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="dark">
-      <body className={`${outfit.variable} ${mono.variable} font-outfit antialiased bg-[#020617]`}>
+    <html lang="en">
+      <body className="antialiased">
         <AppLayout>
           {children}
         </AppLayout>
